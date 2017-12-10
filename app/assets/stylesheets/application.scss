@@ -1,0 +1,79 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ */
+@import "bootstrap";
+
+.container {
+    border: 2px solid green;
+}
+
+.col-sm {
+    border: 2px solid red;
+}
+
+.jumbotron {
+    min-height: 600px;
+    background-image: url("https://images.unsplash.com/photo-1503454175556-2d47ed6f1f7a?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 0;
+    margin-top: -2px;
+}
+
+.jumbotron-content {
+    padding-top: 100px;
+}
+
+.navbar-custom {
+    background-color: #E0E0E0;
+}
+
+.jumbo-bg {
+    height: 600px;
+    width: 100%;
+    background-color: #3949AB;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    overflow: hidden;
+}
+
+.jumbotron-content {
+    position: relative;
+    z-index: 100;
+    width: 50%;
+    margin-bottom: -50%; 
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.jumbo-btn {
+    margin: 2px;
+}
+
+.jumbo-icon {
+    margin: 8px;
+}
+
+.jumbo-video {
+    object-fit: fill;
+}
+
+.breaker {
+    border: 0.5px solid gray;
+    margin-bottom: 25px;
+}
