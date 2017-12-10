@@ -29,6 +29,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+# Webpacker for ReactJS
+gem 'webpacker'
 # Bootstrap
 gem 'bootstrap', '~> 4.0.0.alpha6'
 # JQuery
