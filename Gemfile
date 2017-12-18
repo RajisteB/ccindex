@@ -37,6 +37,8 @@ gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'jquery-rails'
 # HAML Template Engine
 gem 'haml', '~> 5.0', '>= 5.0.4'
+# Socket.io - rails
+gem 'socket.io-rails', '~> 1.3', '>= 1.3.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

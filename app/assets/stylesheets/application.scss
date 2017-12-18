@@ -13,7 +13,8 @@
  */
 @import "bootstrap";
 
-.container {
+.content {
+    width: 90%;
     border: 2px solid green;
 }
 
@@ -74,6 +75,82 @@
 }
 
 .breaker {
-    border: 0.5px solid gray;
+    border: 0.5px solid white;
     margin-bottom: 25px;
+}
+
+.table {
+    width: 50%;
+    margin: 20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.quote-container {
+    height: 75vh;
+    width: 100%;
+    border: 2px solid orange;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dataset {
+    width: 48%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
+.databox {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    width: 30%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+}
+
+.symbol-img {
+    width: 30%;
+    height: 100%;
+    text-align: center;
+}
+
+.v-break {
+    border-left: 1px solid lightgrey;
+    height: 100%;
+}
+
+.symbol-img img {
+    height: 80%;
+    width: 80%;
+    margin-top: 7px;
+}
+
+.datacontent {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 70%;
+}
+
+.data-upper {
+    height: 50%;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    font-size: 11px;
+    text-align: center;
+    padding-top: 4%;
+}
+
+.data-lower {
+    height: 50%;
+    text-align: center;
+    padding-top: 3%;
+}
+
+.navset{
+    width: 48%;
+    height: 100%;
+    border: 2px solid red;
 }
