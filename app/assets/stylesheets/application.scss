@@ -141,6 +141,8 @@
     font-size: 11px;
     text-align: center;
     padding-top: 4%;
+    display: flex;
+    justify-content: center;
 }
 
 .data-lower {
@@ -149,8 +151,31 @@
     padding-top: 3%;
 }
 
+.changepct {
+    font-size: 10px;
+    padding-left: 5px;
+}
+
 .navset{
     width: 48%;
     height: 100%;
     border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.countdown {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    min-height: 15%;
+    color: #2574A9;
+    opacity: 0.9;
+}
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
