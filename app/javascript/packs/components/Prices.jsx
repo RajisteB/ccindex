@@ -68,7 +68,7 @@ class Prices extends Component {
                                         rank.color = 'green';
                                     }
                                 })
-                                console.log(mktCapRanked);
+                                // console.log(mktCapRanked);
 
                                 mktCapRanked.map(coin => {
                                     totalPrice += coin.info.USD.PRICE;
@@ -88,14 +88,12 @@ class Prices extends Component {
                                 let indexPrice = parseFloat(value).toFixed(2);
 
 
-                                console.log(`Total Price: ${totalPrice}`);
-                                console.log(`Total MktCap: ${totalCap}`);
-                                console.log(`Avg Price: ${avgPrice}`);
-                                console.log(`Avg Cap: ${avgCap}`);
-                                console.log(`$${pct}`);
-                                console.log(weighted);
-                                console.log(`$${parseFloat(value).toFixed(2)}`);
-                                console.log(dailychg);
+                                // console.log(`Total Price: ${totalPrice}`);
+                                // console.log(`Total MktCap: ${totalCap}`);
+                                // console.log(`Avg Price: ${avgPrice}`);
+                                // console.log(`Avg Cap: ${avgCap}`);
+                                // console.log(`CIX15 Coin Value: $${parseFloat(value).toFixed(2)}`);
+                                // console.log(`Avg Pct Chg: ${dailychg}%`);
                                 // set state
                                 this.setState({
                                     rank: mktCapRanked,
@@ -114,7 +112,7 @@ class Prices extends Component {
 
     render() {
         return (
-            <div className="quote-container">
+            <div className="quotes">
                 <div className="dataset">
                     {this.state.apiDataLoaded ? this.state.rank.map(rank => {
                         return (
@@ -127,7 +125,6 @@ class Prices extends Component {
                                 <div className="datacontent">
                                     <div className="data-upper">
                                         <p>{rank.name}</p>
-                                        <p style={{ color: rank.color }} id={`${rank.symbol}-CHG`} className="changepct"></p>
                                     </div>
                                     <div className="data-lower">
                                         <p style={{ color: rank.color }} id={`${rank.symbol}-PRICE`}>{parseFloat(rank.info.USD.PRICE).toLocaleString('en-US', { style: 'currency', currency: 'USD' })}</p>
@@ -139,8 +136,19 @@ class Prices extends Component {
                 </div>
                 <div className="navset">
                     <Countdown />
-                    <div>
-                        <h2>${this.state.price}</h2>
+                    <div className="icoStats">
+                        <div>
+                            <h4>Contributors:</h4>
+                            <h6>138</h6>
+                        </div>
+                        <div>
+                            <h4>Total Holdings:</h4>
+                            <h6>$ 252,328.32</h6>
+                        </div>
+                        <div>
+                            <h4>Curr Coin Price:</h4>
+                            <h6>${this.state.price}</h6>
+                        </div>
                     </div>
                 </div>
             </div>
